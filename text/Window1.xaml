@@ -1,0 +1,36 @@
+﻿<Window x:Class="text.Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:text"
+        mc:Ignorable="d"
+        Title="Window" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="200"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="270"/>
+                <ColumnDefinition Width="270"/>
+                <ColumnDefinition Width="270"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="start_test_button" Content="Начать" Background="LightGreen" FontSize="30" FontFamily="Arial Black" Grid.Column="0" Click="start_test_button_Click"/>
+            <Button x:Name="edit_test_button" Content="Редоктировать" Background="LightGreen" FontFamily="Arial Black" FontSize="30" Grid.Column="3" Grid.ColumnSpan="2" Click="edit_test_button_Click"/>
+            <Button x:Name="exit_button" Content="Выйти" Background="LightGreen" FontSize="30" FontFamily="Arial Black" Click="exit_button_Click" Grid.Column="1"/>
+
+        </Grid>
+        <Frame x:Name="pages" NavigationUIVisibility="Hidden" Margin="5,5,5,5" Grid.Row="1"/>
+
+
+    </Grid>
+</Window>

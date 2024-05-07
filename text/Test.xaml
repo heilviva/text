@@ -1,0 +1,34 @@
+﻿<Window x:Class="text.Test"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:text"
+        mc:Ignorable="d"
+        Title="Test" Height="450" Width="800">
+    
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBlock x:Name="_message" TextWrapping="Wrap" Text="" Grid.Column="0"  Grid.Row="0" FontSize="10" FontFamily="Arial Black" TextAlignment="Center" Foreground="Black" FontWeight="Bold"/>
+            <TextBlock x:Name="_title" TextWrapping="Wrap" Text="" Grid.Column="0"  Grid.Row="1" FontSize="10" FontFamily="Arial Black" TextAlignment="Center"  FontWeight="Black"/>
+            <TextBlock x:Name="_describe"  TextWrapping="Wrap" Grid.Row="2" Grid.Column="0" FontSize="10" FontFamily="Arial Black" Foreground="Black" TextAlignment="Center" FontWeight="Bold"/>
+            <Button x:Name="answer_1_button" Content="" Click="answer_1_button_Click" Background="White" Grid.Row="3" />
+            <Button x:Name="answer_2_button" Content="" Background="White" Grid.Row="4" Click="answer_2_button_Click" RenderTransformOrigin="0.498,-0.935"/>
+            <Button x:Name="answer_3_button" Content="" Background="White" Grid.Row="5" Click="answer_3_button_Click"/>
+
+
+        </Grid>
+</Window>
